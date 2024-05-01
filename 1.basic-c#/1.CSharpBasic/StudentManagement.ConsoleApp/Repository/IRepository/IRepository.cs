@@ -1,0 +1,37 @@
+using System.Linq.Expressions;
+
+namespace StudentManagement.ConsoleApp.Repository.IRepository
+{
+    public interface IRepository<TEntity> where TEntity : class
+    {
+        void Add(TEntity entity);
+        Task AddAsync(TEntity entity);
+        void Update(TEntity entity);
+        void Delete(TEntity entity);
+        void Delete(object id);
+        void Delete(Expression<Func<TEntity, bool>> filter);
+        int Count();
+        int Count(Expression<Func<TEntity, bool>> filter);
+        IEnumerable<TEntity> GetList(
+            Expression<Func<TEntity, bool>> filter = null!,
+            Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null!,
+            string includeProperties = "",
+            int skip = 0,
+            int take = 0
+        );
+        Task<IEnumerable<TEntity>> GetListAsync(
+            Expression<Func<TEntity, bool>> filter = null!,
+            Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null!,
+            string includeProperties = "",
+            int skip = 0,
+            int take = 0
+        );
+        bool Any(Expression<Func<TEntity, bool>> filter);
+        Task<bool> AnyAsync(Expression<Func<TEntity, bool>> filter);
+        TEntity GetById(object id);
+        Task<TEntity> GetByIdAsync(object id);
+        int Commit();
+        Task<int> CommitAsync();
+
+    }
+}

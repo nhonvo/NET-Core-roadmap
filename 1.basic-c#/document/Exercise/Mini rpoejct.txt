@@ -1,0 +1,15 @@
+mini project chia nhóm 3 người, tuần sau bắt đầu làm:Implement a feature to automatically send scheduled emails
+- using a single account to perform the email sending task automatically.
+- The system should be able to send regular emails
+    - The email content:
+    - composing it on the editor
+    - reading it from an HTML template file
+    - The system should be able to automatically fill in some content, such as the recipient's name, using their email address or other information.
+    - allows users to send emails to multiple recipients with To, CC, and BCC options
+- settings screen to configure email sending options(content, user recipient, To, CC, BCC, time will sent the email).
+- email list management to manage list email in the system.
+- Implement a template management screen to manage system email templates.
+- The system should store "email sending" history.
+- The system should be able to send meeting requests email & auto scheduler the meeting on Microsoft Teams.
+- Provide user permissions to ensure that only authorized users can access and manage the feature.
+

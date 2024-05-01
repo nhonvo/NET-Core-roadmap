@@ -1,0 +1,20 @@
+﻿class Program
+{
+
+    public static string ReverseString(string str)
+    {
+        string str1 = "";
+        for (int i = str.Length - 1; i >= 0; i--)
+        {
+            str1 += str[i];
+        }
+        return str1;
+    }
+
+
+    public static void Main(string[] args)
+    {
+        string text = "hello world";
+        Console.WriteLine(ReverseString(text));
+    }
+}

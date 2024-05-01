@@ -1,0 +1,5 @@
+{
+    "SqlServer" :  {
+        "ConnectionString"  : "Data Source=TRUONGNHON; Initial Catalog=studentManagement; User id=TRUONGNHON; Password=123;"
+    }
+}

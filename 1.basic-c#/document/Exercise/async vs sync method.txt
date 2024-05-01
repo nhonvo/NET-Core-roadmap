@@ -1,0 +1,5 @@
+When using await, the method will not proceed to the next line until the awaited task has completed. However, the difference between asynchronous and synchronous methods is that with synchronous methods, the method will block and wait for the operation to complete before proceeding to the next line. This means that the thread executing the method is blocked and cannot be used for other tasks until the operation is complete.
+
+With asynchronous methods, on the other hand, the method can release the thread back to the thread pool while it waits for the awaited task to complete. This means that the thread can be used for other tasks, which can improve the overall performance and responsiveness of the application.
+
+So while both synchronous and asynchronous methods wait for an operation to complete, the main difference is in how they handle the waiting period and whether or not they block the thread.
