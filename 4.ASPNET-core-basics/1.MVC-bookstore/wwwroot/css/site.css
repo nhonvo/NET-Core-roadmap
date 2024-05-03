@@ -1,0 +1,171 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Define CSS Variables for Colors */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-color: #333;
+}
+
+/* Base Styling */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.item {
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.item:hover {
+  transform: translateY(-10px);
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .item {
+      flex: 1 1 calc(50%);
+  }
+}
+
+/* Button Styling */
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+/* Base Table Styles */
+table {
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Collapse cell borders */
+  margin-bottom: 20px;
+}
+
+/* Cell Padding and Borders */
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Header Styling */
+th {
+  background-color: #f2f2f2; /* Light gray background */
+  font-weight: bold;
+}
+
+/* Alternate Row Colors */
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light alternate color */
+}
+
+/* Row Hover Effect */
+tr:hover {
+  background-color: #e0e0e0; /* Light gray when hovering */
+}
+
+/* Responsive Tables */
+@media (max-width: 768px) {
+  table {
+      width: 100%; /* Full width */
+  }
+}
+/* Form Styling */
+form {
+  max-width: 400px; /* Set a max width for the form */
+  margin: 20px auto; /* Center the form */
+  padding: 20px;
+}
+
+/* Form Labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input Fields */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding doesn't affect element width */
+}
+
+/* Button Styling */
+button {
+  background-color: var(--primary-color, #3498db);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darken(var(--primary-color, #3498db), 10%);
+}
+
+/* Error Messages */
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Accessible Error Styling */
+input:invalid, textarea:invalid {
+  border-color: red;
+}
+
+/* Responsive Forms */
+@media (max-width: 768px) {
+  form {
+      padding: 10px;
+  }
+}
