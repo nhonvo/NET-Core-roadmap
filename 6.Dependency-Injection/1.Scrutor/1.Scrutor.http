@@ -1,0 +1,6 @@
+@_1.Scrutor_HostAddress = http://localhost:5262
+
+GET {{_1.Scrutor_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
