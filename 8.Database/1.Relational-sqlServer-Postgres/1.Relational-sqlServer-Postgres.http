@@ -1,0 +1,6 @@
+@_1.Relational_sqlServer_Postgres_HostAddress = http://localhost:5065
+
+GET {{_1.Relational_sqlServer_Postgres_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
