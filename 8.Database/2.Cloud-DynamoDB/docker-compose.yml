@@ -1,0 +1,26 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP.NET Core service.
+
+version: '3.4'
+
+services:
+  2clouddynamodb:
+    image: 2clouddynamodb
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5295:5295
+
+  localstack:
+    image: localstack/localstack
+    ports:
+      - "21461:4566"
+    environment:
+      - SERVICES=dynamodb      
+      - DATA_DIR=/tmp/localstack/data
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - AWS_ACCESS_KEY_ID=key
+      - AWS_SECRET_ACCESS_KEY=secret
+    volumes:
+      - ./SolutionFolder/localstack-init:/etc/localstack/init/ready.d
+      - ./SolutionFolder/.localstack:/var/lib/localstack
