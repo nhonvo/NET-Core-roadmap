@@ -10,3 +10,6 @@ note: postgres and sqlserver has different migrations generation processes.
 - Cloud-based databases
 Each database type has its own set of features and use cases, and the choice of which database to use will depend on the specific requirements of the application.
 
+## Search Engines
+
+- Web API to interact with Elasticsearch using the Nest package. It includes basic CRUD operations, indexing, searching, and mapping functionalities.
