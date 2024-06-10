@@ -1,0 +1,6 @@
+@_2.Ilogger_HostAddress = http://localhost:5165
+
+GET {{_2.Ilogger_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

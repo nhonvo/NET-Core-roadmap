@@ -1,0 +1,6 @@
+@_3.ELKStack_HostAddress = http://localhost:5290
+
+GET {{_3.ELKStack_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
