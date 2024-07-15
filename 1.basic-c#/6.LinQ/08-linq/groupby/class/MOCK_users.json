@@ -1,0 +1,12 @@
+[
+  { "Id": 1, "UserName": "John Doe", "Age": 21, "Gender": "Male", "UserType": "Regular", "City": "CityA" },
+  { "Id": 2, "UserName": "Jane Smith", "Age": 22, "Gender": "Female", "UserType": "Premium", "City": "CityA" },
+  { "Id": 3, "UserName": "Bob Johnson", "Age": 23, "Gender": "Male", "UserType": "Regular", "City": "CityB" },
+  { "Id": 4, "UserName": "Alice Brown", "Age": 23, "Gender": "Female", "UserType": "Premium", "City": "CityB" },
+  { "Id": 5, "UserName": "Charlie White", "Age": 23, "Gender": "Male", "UserType": "Regular", "City": "CityB" },
+  { "Id": 6, "UserName": "Eva Davis", "Age": 24, "Gender": "Female", "UserType": "Premium", "City": "CityC" },
+  { "Id": 7, "UserName": "Frank Wilson", "Age": 24, "Gender": "Male", "UserType": "Regular", "City": "CityD" },
+  { "Id": 8, "UserName": "Grace Lee", "Age": 24, "Gender": "Female", "UserType": "Regular", "City": "CityD" },
+  { "Id": 9, "UserName": "Henry Taylor", "Age": 25, "Gender": "Male", "UserType": "Premium", "City": "CityD" },
+  { "Id": 10, "UserName": "Ivy Clark", "Age": 26, "Gender": "Female", "UserType": "Premium", "City": "CityD" }
+]
